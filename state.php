@@ -21,6 +21,7 @@
 
 
 // Hier einen Sicherheitscode vergeben, der als parameter mit übergeben wird!
+// Alle daten werden via Push von der App an IPS Übermittelt
 $secureCode = "123456789";
 
 
@@ -50,7 +51,7 @@ if(isset($_GET['s']) && $_GET['s'] == $secureCode)
 
 
 				// 2. Person möglich
-if($_GET['person'] == 'WIE HEIßt DIE 2te PERSON?') 
+if($_GET['person'] == 'wie heißt die 2te Person?') 
 {
 
 	if ($_GET['state'] == 'true')
@@ -60,7 +61,7 @@ if($_GET['person'] == 'WIE HEIßt DIE 2te PERSON?')
     		SetValue(00000, true);
 
 			//OPTIONAL: Push über die IPS APP
-		#    WFC_PushNotification(26497 /*[WebFront]*/, 'Home', 'Adeline @Home', '', 0);
+		#    WFC_PushNotification(26497 /*[WebFront]*/, 'Home', 'Ich @Home', '', 0);
 			echo('arrived');
 		}
 	else
