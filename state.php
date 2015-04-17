@@ -53,11 +53,9 @@ if(isset($_GET['s']) && $_GET['s'] == $secureCode)
 
 
 				// 2. Person möglich
-<<<<<<< HEAD
+
 if($_GET['name'] == 'WIE HEIßt DIE 2te PERSON?') 
-=======
-if($_GET['person'] == 'wie heißt die 2te Person?') 
->>>>>>> origin/master
+
 {
 
 	if ($_GET['state'] == 'true')
