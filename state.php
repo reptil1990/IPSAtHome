@@ -30,8 +30,8 @@ if(isset($_GET['s']) && $_GET['s'] == $secureCode)
 
 
 				// Hier den Namen der Variablem eintragen
-  if($_GET['person'] == 'MaxMustermann') 
-
+  if($_GET['name'] == 'MaxMustermann') 
+	{
 	if ($_GET['state'] == 'true')
 		{
 			// BOOL in IPS und ID eintragen
@@ -47,10 +47,12 @@ if(isset($_GET['s']) && $_GET['s'] == $secureCode)
 			 SetValue(0000, false);
     		echo 'leaved';
 		}
+		
+	}
 
 
 				// 2. Person möglich
-if($_GET['person'] == 'WIE HEIßt DIE 2te PERSON?') 
+if($_GET['name'] == 'WIE HEIßt DIE 2te PERSON?') 
 {
 
 	if ($_GET['state'] == 'true')
